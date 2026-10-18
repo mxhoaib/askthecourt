@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AskTheCourt.ai — Let the AI Judge Settle Your Fight</title>
+<meta name="description" content="Two sides. One AI judge. A funny but fair verdict for couples, friends and roommates.">
+<meta name="theme-color" content="#0d0a07">
+<meta property="og:type" content="website"><meta property="og:title" content="AskTheCourt.ai — Order in the court!">
+<meta property="og:description" content="Type both sides of your argument. The AI judge delivers a verdict, a sentence, and a fairness score.">
+<meta property="og:url" content="https://mxhoaib.github.io/askthecourt/"><meta property="og:image" content="https://mxhoaib.github.io/askthecourt/og.svg">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AskTheCourt.ai ⚖️"><meta name="twitter:description" content="Let the AI judge settle your fight.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+<link rel="stylesheet" href="style.css"></head><body>
+<header><div class="logo">⚖️ AskTheCourt<span>.ai</span></div><p class="tag">Two sides. One judge. Zero appeals.</p></header>
+<main>
+<section id="form" class="card">
+ <h1>Settle your fight</h1>
+ <div class="side"><input id="nA" placeholder="Plaintiff's name" maxlength="30"><textarea id="tA" placeholder="Your side of the story…" maxlength="600"></textarea></div>
+ <div class="vs">VS</div>
+ <div class="side"><input id="nB" placeholder="Defendant's name" maxlength="30"><textarea id="tB" placeholder="Their side of the story…" maxlength="600"></textarea></div>
+ <button id="go" class="btn gold">🔨 Call the Court</button>
+ <button id="ex" class="link">Try an example case</button>
+</section>
+<section id="deliberate" class="hidden center"><div class="gavel">🔨</div><div class="block"></div><p id="dmsg">The judge is deliberating…</p></section>
+<section id="result" class="hidden">
+ <div id="share-card" class="verdict">
+  <div class="vh">⚖️ OFFICIAL VERDICT <small>AskTheCourt.ai</small></div>
+  <div class="case" id="vCase"></div>
+  <div class="winner">Winner: <b id="vWin"></b></div>
+  <p id="vReason"></p>
+  <div class="sent"><span>SENTENCE</span><p id="vSent"></p></div>
+  <div class="score"><span>Fairness score</span><div class="bar"><i id="vBar"></i></div><b id="vScore"></b></div>
+  <div class="stamp">CASE CLOSED</div>
+ </div>
+ <div class="actions">
+  <button id="shr" class="btn gold">📤 Share verdict</button>
+  <div class="row"><a id="wa" class="btn" target="_blank" rel="noopener">WhatsApp</a><a id="xx" class="btn" target="_blank" rel="noopener">X</a><button id="cp" class="btn">Copy link</button></div>
+  <button id="pro" class="btn ghost">📜 Detailed ruling — coming soon</button>
+  <button id="again" class="btn gold">⚖️ Settle your own fight</button>
+ </div>
+</section>
+</main>
+<footer>For entertainment only. <br>Built by D3DDD</footer>
+<div id="toast"></div>
+<script src="app.js"></script></body></html>
